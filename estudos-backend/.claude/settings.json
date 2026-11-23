@@ -1,0 +1,18 @@
+{
+  "outputStyle": "Tutor",
+  "permissions": {
+    "allow": [
+      "Bash(node:*)"
+    ],
+    "deny": [
+      "Edit(**/*.js)",
+      "Edit(**/*.ts)",
+      "Edit(**/*.mjs)",
+      "Edit(**/*.cjs)",
+      "Edit(**/*.sql)",
+      "Edit(**/*.json)",
+      "Edit(PROGRESSO.md)",
+      "Edit(CLAUDE.md)"
+    ]
+  }
+}
