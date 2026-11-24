@@ -9,7 +9,8 @@
 - **Exercícios da semana:**
   - Exercício 01 — Extração de salários ✅ (23/11/2026)
   - Exercício 02 — Preços com desconto ✅ (23/11/2026)
-- **Exercício atual:** a definir (Exercício 03 ou fechar a semana com o post)
+  - Exercício 03 — Lista de chamada (map com item + posição) ✅ (24/11/2026)
+- **Exercício atual:** fechar a semana com o post do `map()` (`/post`)
 
 
 

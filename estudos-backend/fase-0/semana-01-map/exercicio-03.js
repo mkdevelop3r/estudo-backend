@@ -30,7 +30,7 @@ const alunos = [
 // Sua solução:
 
 const listaDeChamada = alunos.map(function(aluno,posicao){
-  return posicao[0]
+  return `${posicao + 1}. ${aluno.nome} - nota ${aluno.nota}`
 });
 
 console.log(listaDeChamada)

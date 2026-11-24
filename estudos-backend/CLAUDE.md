@@ -48,8 +48,7 @@ O modo depende da fase. Na dúvida, use o modo Tutor.
   projetos. Não decide por mim. Discute trade-offs.
 
 ## Documentação pública
-A cada conteúdo concluído, escrevo um post curto para o LinkedIn (`/post`). O texto é
-meu. Você só revisa clareza e precisão técnica e não reescreve o post inteiro.
+A cada conteúdo concluído, escrevo um post curto para o LinkedIn (`/post`). você pode escrever também
 
 Já concluído: `filter()` (avaliação 3/3).
 Status atual: ver `PROGRESSO.md` (eu atualizo esse arquivo).
