@@ -11,5 +11,22 @@
 
 // Cole aqui o array funcionarios da aula:
 
+const funcionarios = [
+  {nome: "Miquéias", salario:1000},
+  {nome: "Paulo", salario:1500},
+  {nome: "Carlos", salario:1700},
+  {nome: "Airan", salario:17090},
+];
 
 // Sua solução:
+
+const salarios = funcionarios.map(function(funcionario) {
+  return funcionario.salario;
+});
+
+console.log(salarios);
+
+
+
+
+
