@@ -24,8 +24,6 @@
  * como fica o acumulador (o objeto inteiro) depois de cada volta?
  */
 
-const { access } = require("node:fs");
-
 const estoque = [
   { produto: "Teclado", preco: 100, quantidade: 3 },
   { produto: "Mouse", preco: 50, quantidade: 5 },
@@ -35,8 +33,8 @@ const estoque = [
 
 // Sua solução:
 
-const auditoria_Estoque = estoque.reduce(function(total_preco,quantidade_total,acumulador){
-  return total_preco.preco + quantidade_total.quantidade +  acumulador
-})
+const auditoria_Estoque = estoque.reduce(function(valorTotal,unidades){
+  return (unidades.quantidade + unidades.quantidade),(unidades.quantidade * unidades.preco + valorTotal)
+},unidades(0),valorTotal(0))
 
 console.log(auditoria_Estoque)
