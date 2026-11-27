@@ -33,8 +33,29 @@ const estoque = [
 
 // Sua solução:
 
-const auditoria_Estoque = estoque.reduce(function(valorTotal,unidades){
-  return (unidades.quantidade + unidades.quantidade),(unidades.quantidade * unidades.preco + valorTotal)
-},unidades(0),valorTotal(0))
+const resumo = estoque.reduce(function(acumulador/* o que já foi juntado até agora*/,produto/*um produto, o da vez.*/)
 
-console.log(auditoria_Estoque)
+{ //estoque.reduce(...): percorre o array estoque, um produto por vez, e junta tudo num resultado só. //a função que roda a cada volta. Ela recebe dois parâmetros:
+
+
+  return {unidades: acumulador.unidades + produto.quantidade, valorTotal: produto.preco * produto.quantidade + acumulador.valorTotal}
+
+  /*A cada volta, a função devolve um objeto novo:
+
+unidades = o que já tinha + a quantidade deste produto
+valorTotal = o que já tinha + (preço × quantidade deste produto) */
+
+},{unidades: 0, valorTotal: 0})//o valor inicial  
+
+// A diferença é que aqui ele é um objeto, porque o resultado tem duas informações.
+
+console.log(resumo)
+
+
+/*Parte 5: as voltas, uma a uma
+      Volta	acumulador chega como	produto	                  return devolve
+1	{unidades: 0, valorTotal: 0}	Teclado (100 × 3)	{unidades: 3, valorTotal: 300}
+2	{unidades: 3, valorTotal: 300}	Mouse (50 × 5)	{unidades: 8, valorTotal: 550}
+3	{unidades: 8, valorTotal: 550}	Monitor (800 × 2)	{unidades: 10, valorTotal: 2150}
+4	{unidades: 10, valorTotal: 2150}	Headset (150 × 4)	{unidades: 14, valorTotal: 2750}
+   */
